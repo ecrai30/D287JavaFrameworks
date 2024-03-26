@@ -11,7 +11,6 @@ C.  Customize the HTML user interface for your customer’s application. The use
     mainscreen.html, Line 116, 125,134,143,152: Added product names
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
-    
     Created about.html    
     about.html, Lines 18 - 33: Added mission, team, and contact information. 
     about.html, Lines 10 - 13: Added button that links to mainscreen.html and about.html.
