@@ -90,16 +90,16 @@ public abstract class Part implements Serializable {
     }
 
     /**D287 Part F: set inventory min and max*/
-    public void setMinimum(int minInv){
+    public void setMin_inv(int minInv){
         this.minInv = minInv;
     }
-    public int getMinimum(){
+    public int getMin_inv(){
         return this.minInv;
     }
-    public void setMaximum(int maxInv){
+    public void setMax_inv(int maxInv){
         this.maxInv = maxInv;
     }
-    public int getMaximum(){
+    public int getMax_inv(){
         return this.maxInv;
     }
 
