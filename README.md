@@ -15,9 +15,11 @@ D.  Add an “About” page to the application to describe your chosen customer�
     about.html, Lines 18 - 33: Added mission, team, and contact information. 
     about.html, Lines 10 - 13: Added button that links to mainscreen.html and about.html.
     mainscreen.html, lines 18 - 21: Added buttons that links to maincreen.html and about.html.
-    Added AboutPageController.java
+    AboutPageController.java, Lines 9- 15 :Added AboutPageController
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
+    BootStrapData.java, Lines: 47 - 125: Added 5 parts.
+    BootStrapData.java, Lines: 129 - 136: Added 5 products.
 
 F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters: 
     •  The “Buy Now” button must be next to the buttons that update and delete products.
