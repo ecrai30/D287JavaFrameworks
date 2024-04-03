@@ -29,7 +29,10 @@ F.  Add a “Buy Now” button to your product list. Your “Buy Now” button m
 
 G.  Modify the parts to track maximum and minimum inventory by doing the following:
     •  Add additional fields to the part entity for maximum and minimum inventory.
+    Part.java, Lines 31-32, 46-47, 55-56: Declared minInv and maxInv and added to constructor.
+    Part.java, Lines 92 - 104: Added getter and setter methods for minInv and maxInv.
     •  Modify the sample inventory to include the maximum and minimum fields.
+    BootStrapData.java, Lines 47 -135: Added minInv and maxInv fields to sample inventory.
     •  Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
     •  Rename the file the persistent storage is saved to.
     •  Modify the code to enforce that the inventory is between or at the minimum and maximum value.
