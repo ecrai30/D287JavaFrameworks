@@ -23,6 +23,7 @@ E.  Add a sample inventory appropriate for your chosen store to the application.
 
 F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters: 
     •  The “Buy Now” button must be next to the buttons that update and delete products.
+        mainscreen.html, Line 86: Added Buy Now button
     •  The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
     •  Display a message that indicates the success or failure of a purchase.
 
