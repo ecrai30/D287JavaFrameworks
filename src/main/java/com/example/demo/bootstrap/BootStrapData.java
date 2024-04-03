@@ -54,7 +54,8 @@ public class BootStrapData implements CommandLineRunner {
             r.setInv(5);
             r.setPrice(20.0);
             r.setId(100L);
-            
+            r.setMin_inv(0);
+            r.setMax_inv(100);
             outsourcedPartRepository.save(r);
             OutsourcedPart thePart1=null;
             List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
@@ -70,6 +71,8 @@ public class BootStrapData implements CommandLineRunner {
             s.setInv(5);
             s.setPrice(20.0);
             s.setId(100L);
+            s.setMin_inv(0);
+            s.setMax_inv(100);
             outsourcedPartRepository.save(s);
             OutsourcedPart thePart2=null;
             List<OutsourcedPart> outsourcedParts2=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
@@ -85,6 +88,8 @@ public class BootStrapData implements CommandLineRunner {
             m.setInv(5);
             m.setPrice(20.0);
             m.setId(100L);
+            m.setMin_inv(0);
+            m.setMax_inv(100);
             outsourcedPartRepository.save(m);
             OutsourcedPart thePart3=null;
             List<OutsourcedPart> outsourcedParts3=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
@@ -101,6 +106,8 @@ public class BootStrapData implements CommandLineRunner {
             l.setInv(5);
             l.setPrice(20.0);
             l.setId(100L);
+            l.setMin_inv(0);
+            l.setMax_inv(100);
             outsourcedPartRepository.save(l);
             OutsourcedPart thePart4=null;
             List<OutsourcedPart> outsourcedParts4=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
@@ -116,6 +123,8 @@ public class BootStrapData implements CommandLineRunner {
             p.setInv(5);
             p.setPrice(20.0);
             p.setId(100L);
+            p.setMin_inv(0);
+            p.setMax_inv(100);
             outsourcedPartRepository.save(p);
             OutsourcedPart thePart5=null;
             List<OutsourcedPart> outsourcedParts5=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
