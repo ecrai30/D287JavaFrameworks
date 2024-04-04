@@ -83,7 +83,8 @@
             <td><a th:href="@{/showPartFormForUpdate(partID=${tempPart.id})}" class="btn btn-primary btn-sm mb-3">Update</a>
                 <a th:href="@{/deletepart(partID=${tempPart.id})}" class="btn btn-primary btn-sm mb-3"
                    onclick="if(!(confirm('Are you sure you want to delete this part?')))return false">Delete</a>
-                <button class="btn btn-success btn-sm mb-3" onclick="buyNow(${tempProduct.id}, '${tempProduct.name}')">Buy Now</button>
+                <button type=submit" class="btn btn-success btn-sm mb-3" onclick="buyNow(${tempProduct.id}, '${tempProduct.name}')">Buy Now</button>
+                <a th:href="@{/decrementInventory/{productId}}" class="btn btn-danger">Decrement Inventory</a>
 
             </td>
         </tr>

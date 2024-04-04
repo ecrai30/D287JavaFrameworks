@@ -27,6 +27,19 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
+    public void decrementProductInventory(int productId){
+
+        Product product = productRepository.findById(productId);
+        if(product!= null){
+            int currentInventory = product.getInv();
+            if (currentInventory > 0){
+                product.setInv(currentInventory - 1);
+                productRepository.save(product);
+            }
+        }
+
+    }
+    @Override
     public List<Product> findAll() {
         return (List<Product>) productRepository.findAll();
     }
