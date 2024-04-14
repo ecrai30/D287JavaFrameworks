@@ -32,7 +32,7 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
         Part.java, Lines 31-32, 46-47, 55-56: Declared minInv and maxInv and added to constructor.
         Part.java, Lines 92 - 104: Added getter and setter methods for minInv and maxInv.
     •  Modify the sample inventory to include the maximum and minimum fields.
-        BootStrapData.java, Lines 47 -135: Added minInv and maxInv fields to sample inventory.
+        BootStrapData.java, Lines 47 - 135: Added minInv and maxInv fields to sample inventory.
     •  Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
         InhousePartForm.html, Lines 26 - 28: Added Max and Min inventory input fields.
         OutsourcePartForm.html, Lines 24 - 26: Added Max and Min inventory input fields. 
