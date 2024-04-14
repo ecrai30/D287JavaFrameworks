@@ -103,7 +103,15 @@ public abstract class Part implements Serializable {
         return this.maxInv;
     }
 
-
+/** D287 PartG**/
+public boolean isInvValid(){
+    if(inv >= minInv && inv <= maxInv){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
     public Set<Product> getProducts() {
         return products;
     }
