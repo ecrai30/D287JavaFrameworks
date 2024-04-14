@@ -50,6 +50,8 @@ H.  Add validation for between or at the maximum and minimum fields. The validat
         EnufPartsValidator.java, Lines 37 - 39: Added if/else statement to check if inventory is less thea minimum inventory
 
 I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
+    PartTest.java, Lines 167 - 174: Added testMinimumInventory unit test.
+    PartTest.java, Lines 176 - 184: Added testMaximumInventory unit test.
 
 J.  Remove the class files for any unused validators in order to clean your code.
 
