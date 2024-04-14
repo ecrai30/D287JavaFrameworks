@@ -127,6 +127,10 @@ class PartTest {
         assertEquals(myProducts,partOut.getProducts());
     }
 
+
+
+
+
     @Test
     void testToString() {
         String name="test inhouse part";
@@ -156,4 +160,27 @@ class PartTest {
         partOut.setId(1l);
         assertEquals(partIn.hashCode(),partOut.hashCode());
     }
+
+
+
+
+    @Test
+    public void testMinimumInventory() {
+        int min_inv=2;
+        partIn.setInv(min_inv);
+        assertEquals(min_inv,partIn.getInv());
+        partOut.setInv(min_inv);
+        assertEquals(min_inv,partOut.getInv());
+    }
+
+    @Test
+    public void testMaximumInventory() {
+        int max_inv=50;
+        partIn.setInv(max_inv);
+        assertEquals(max_inv,partIn.getInv());
+        partOut.setInv(max_inv);
+        assertEquals(max_inv,partOut.getInv());
+
+    }
 }
+
