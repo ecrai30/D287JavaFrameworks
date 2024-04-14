@@ -34,7 +34,7 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
     •  Modify the sample inventory to include the maximum and minimum fields.
         BootStrapData.java, Lines 47 -135: Added minInv and maxInv fields to sample inventory.
     •  Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
-        InhousePartForm.html, Lines 26 -28: Added Max and Min inventory input fields.
+        InhousePartForm.html, Lines 26 - 28: Added Max and Min inventory input fields.
         OutsourcePartForm.html, Lines 24 - 26: Added Max and Min inventory input fields. 
     •  Rename the file the persistent storage is saved to.
         application.properties, Line 6: Renamed and Updated Database filename. 
