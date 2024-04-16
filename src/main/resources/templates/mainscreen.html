@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,40 +14,14 @@
 
     <title>ZikaTronics</title>
 
-    <div class="navbar">
-        <a th:href="@{/mainscreen}">Home</a>
-        <a th:href="@{/about}">About</a>
-    </div>
-    <!--
-    <script> //script
-        function buyNow(productId) {
-            fetch('/buyProduct/' + productId, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Product bought successfully
-                    alert('Product purchased successfully!');
-                } else {
-                    // Error occurred while buying the product
-                    alert('Failed to purchase product!');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred while processing your request.');
-            });
-        }
-    </script>
-    -->
 
 </head>
 
 <body>
-
+<div class="navbar">
+    <a th:href="@{/mainscreen}">Home</a>
+    <a th:href="@{/about}">About</a>
+</div>
 
 <div class="container">
     <h1>ZikaTronics</h1> <!-- Part C-->
@@ -128,8 +101,7 @@
             <td><a th:href="@{/showProductFormForUpdate(productID=${tempProduct.id})}" class="btn btn-primary btn-sm mb-3">Update</a>
                 <a th:href="@{/deleteproduct(productID=${tempProduct.id})}" class="btn btn-primary btn-sm mb-3"
                    onclick="if(!(confirm('Are you sure you want to delete this product?')))return false">Delete</a>
-                <!--<a th:href="@{/product/decrement(productId=${tempProduct.id})}" class="btn btn-success btn-sm mb-3">Buy Now</a>-->
-                <button class="btn btn-success btn-sm mb-3" onclick="buyNow('${tempProduct.id}', '${tempProduct.name}')">Buy Now</button>
+                <a th:href="@{/buyProduct(productId=${tempProduct.id})}" class="btn btn-primary btn-sm mb-3">Buy Now</a>
             </td>
         </tr>
         </tbody>
