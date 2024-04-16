@@ -23,9 +23,12 @@ E.  Add a sample inventory appropriate for your chosen store to the application.
 
 F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters: 
     •  The “Buy Now” button must be next to the buttons that update and delete products.
-        mainscreen.html, Line 86: Added Buy Now button
+        mainscreen.html, Line 130: Added Buy Now button
     •  The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
+        BuyProductController.java, Lines 15 - 50: configured BuyProductController to decrease inventory of product
     •  Display a message that indicates the success or failure of a purchase.
+        confirmationBuyNow.html, Lines 1 -15: Added purchase successful message.
+        confirmationBuyNowError.html, Lines 1 - 15:Added purchase failed message.
 
 G.  Modify the parts to track maximum and minimum inventory by doing the following:
     •  Add additional fields to the part entity for maximum and minimum inventory.
